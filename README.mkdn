@@ -1,36 +1,85 @@
-LineageOS
+
+HorizonDroid v5.3 " Earth "
 ===========
 
-Getting started
----------------
+![**HorizonBanner**](https://github.com/HorizonV2/.github/blob/main/5.3%20EARTH.png)
 
-To get started with Android/LineageOS, you'll need to get familiar with [Source Control Tools](https://source.android.com/setup/develop).
+Welcome to HorizonDroid!
 
-To initialize your local repository using the LineageOS trees, use a command like this:
+HorizonDroid is based on LineageOS, allows users to experience Google's latest Pixel updates while integrating useful features from known custom ROMs.
+We currently support Android 15, with the latest security patches from Google.
+
+<a href="https://sourceforge.net/projects/horizondroid/files/latest/download"><img alt="Download horizondroid" src="https://a.fsdn.com/con/app/sf-download-button" width=276 height=48 srcset="https://a.fsdn.com/con/app/sf-download-button?button_size=2x 2x"></a>
+
+HorizonLabs:
+------------------------
+<p align="center">
+<img src="https://github.com/ryzenforce990/ryzenforce990/blob/main/20240210_231505.png" />
+</p>
+
+**HorizonLabs** is the feature centre of **HorizonDroidLab**, this tab contains all the features / tweaks which are added to HorizonDroidLab.
+Inside **HorizonLabs**, you can find all your needed features.
+**HorizonDroid Team**
+
+Count Download sourceforge:
+-------
+<a href="https://sourceforge.net/projects/horizondroid/files/latest/download"><img alt="Download horizondroid" src="https://img.shields.io/sourceforge/dm/horizondroid.svg" ></a>
+<a href="https://sourceforge.net/projects/horizondroid/files/latest/download"><img alt="Download horizondroid" src="https://img.shields.io/sourceforge/dw/horizondroid.svg" ></a>
+<a href="https://sourceforge.net/projects/horizondroid/files/latest/download"><img alt="Download horizondroid" src="https://img.shields.io/sourceforge/dd/horizondroid.svg" ></a>
+<a href="https://sourceforge.net/projects/horizondroid/files/latest/download"><img alt="Download horizondroid" src="https://img.shields.io/sourceforge/dt/horizondroid.svg" ></a>
+
+### Quick Source Initialization ###
+
+```bash
+repo init -u https://github.com/HorizonV2/android.git -b lineage-22.2 --git-lfs
 ```
-repo init -u https://github.com/LineageOS/android.git -b lineage-22.2 --git-lfs
+
+```bash
+repo sync -c --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune --retry-fetches=5 -j10
 ```
-Then to sync up:
+HorizonDroid Flags:
 ```
-repo sync
+# Maintainer username
+HORIZON_MAINTAINER := superxorn
+
+# Face Unlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
+# Gapps flags
+WITH_GMS := true
+WITH_GMS_VARIANT := pico/core
 ```
-Please see the [LineageOS Wiki](https://wiki.lineageos.org/) for building instructions, by device.
+Generate keys command:
+```
+hk -s
+```
+Setup environment:
 
+``` bash
+lunch lineage_devicecodename-bp1a-buildtype
+```
 
-Submitting patches
-------------------
-Patches are always welcome! Please submit your patches via LineageOS Gerrit!
+```bash
+. build/envsetup.sh
+```
 
-Simply follow our guide on [how to submit patches](https://wiki.lineageos.org/submitting-patch-howto.html).
+```bash
+mka horizon
+```
 
-To view the status of your and others' patches, visit [LineageOS Gerrit Code Review](https://review.lineageos.org/).
+[More build information](https://github.com/HorizonDroidLab/manifest)
 
+### Official Support Group & Channel
 
-Buildbot
---------
+* [**Telegram Channel**](https://t.me/horizondroid)
+* [**Telegram Group**](https://t.me/HorizonDroidChat)
 
-All supported devices are built weekly and periodically as changes are committed to ensure the source trees remain buildable.
-
-You can view the current build statuses at [LineageOS Buildkite](https://buildkite.com/lineageos).
-
-Builds produced weekly by the buildbot can be downloaded from [LineageOS downloads](https://download.lineageos.org/).
+-----------------------------------------------------------------------------
+![CreditsImg](https://github.com/HorizonV2/.github/blob/main/credit.svg)
+ Special thanks to All ROM Developers in this community
+ * [**LineageOS**](https://github.com/LineageOS)
+ * [**AxionAOSP**](https://github.com/AxionAOSP)
+ * [**PixelOS**](https://github.com/PixelOS-AOSP)
+ * [**CrDroid**](https://github.com/crdroidandroid)
+ * [**EvoX**](https://github.com/evolution-x)
+-----------------------------------------------------------------------------

@@ -72,6 +72,7 @@
   <project path="lineage-sdk" name="android_lineage-sdk" groups="pdk-cw-fs,pdk-fs" remote="HorizonDroid" />
   <project path="device/lineage/sepolicy" name="android_device_lineage_sepolicy" groups="pdk-cw-fs,pdk-fs" remote="HorizonDroid" />
   <project path="hardware/lineage/interfaces" name="android_hardware_lineage_interfaces" remote="HorizonDroid" />
+  <project path="hardware/google/pixel" name="android_hardware_google_pixel" groups="generic_fs,pixel,pdk-gs-arm,pdk-gs-imgtec,pdk-desktop" remote="HorizonDroid" />
   <project path="external/FadingEdgeLayout" name="android_external_FadingEdgeLayout" remote="HorizonDroid" />
   
   <!-- Vendor -->

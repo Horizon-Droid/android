@@ -45,6 +45,12 @@ HORIZON_MAINTAINER := superxorn
 # Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
+# Maintainer username
+HORIZON_MAINTAINER := superxorn
+
+# Face Unlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
 # Gapps flags
 WITH_GMS := true/false
 WITH_GMS_VARIANT := pico/core
